@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker buildx build --platform linux/arm64/v8 . --file Dockerfile --tag nginx-fpm-reverse-proxy:$(date +%s)
+      run: docker buildx build --platform linux/arm64/v8 . --file Dockerfile --tag mikevandenberge/nginx-fpm-reverse-proxy:latest
